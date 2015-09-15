@@ -20,4 +20,6 @@ Key Features:
 	•	4 Premade color Options
 
 
+[Live Demo](http://www.mauritiusdsilva.com/themes/hallooou)
+
 Note: Images used in the theme are for preview purpose only.
