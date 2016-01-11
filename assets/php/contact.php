@@ -16,9 +16,9 @@ if($_POST)
     }
 
     //Sanitize input data using PHP filter_var().
-    $user_name      = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-    $user_email     = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $phone_number   = filter_var($_POST["phone"], FILTER_SANITIZE_NUMBER_INT);
+    $user_name      = filter_var($_POST["name"],    FILTER_SANITIZE_STRING);
+    $user_email     = filter_var($_POST["email"],   FILTER_SANITIZE_EMAIL);
+    $phone_number   = filter_var($_POST["phone"],   FILTER_SANITIZE_NUMBER_INT);
     $message        = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
     //additional php validation

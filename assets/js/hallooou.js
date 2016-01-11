@@ -1,3 +1,11 @@
+/*
+    Template: Hallooou HTML5 Responsive template
+    Author: Mauritius D'Silva <hello@mauritiusdsilva.com>
+    Theme URI: http://www.mauritiusdsilva.com/themes/hallooou
+    Version: 1.0
+*/
+
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -25,28 +33,26 @@ $(function() {
 // WOW.js uses animate.css to animate/reveal elements.
 // Browse the list of animation effects available here-> https://daneden.github.io/animate.css/
 $(function() {
-    wow = new WOW(
-    {
-      boxClass:     'wow',      // default
-      animateClass: 'animated', // default
-      offset:       0,          // default
-      mobile:       true,       // default
-      live:         true        // default
-    }
-  )
-  wow.init();
+    wow = new WOW({
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true // default
+    })
+    wow.init();
 });
 
 
 // jQuery Parallax. More info here-> https://github.com/IanLunn/jQuery-Parallax
-$(function(){
+$(function() {
     // apply parallax effect only when body has the ".parallax-page" class
     if ($('body').hasClass('parallax-page')) {
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        
+
         $('#parallax-slide').parallax("50%", 0.1);
         $('#products').parallax("50%", 0.1);
         $('#portfolio').parallax("50%", 0.1);
@@ -500,7 +506,7 @@ $(function() {
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
