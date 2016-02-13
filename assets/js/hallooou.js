@@ -182,7 +182,9 @@ $(function() {
 
 // Carousel Slider
 $(function() {
-    interval: 8000 //changes the speed
+    $('.carousel').carousel({
+            interval: 8000 //changes the speed
+    })
 });
 
 
